@@ -13,10 +13,15 @@ const Navigation = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border pt-[env(safe-area-inset-top)]">
       <div className="container mx-auto flex items-center justify-between h-16 px-6 max-w-[1100px]">
-        <a href="#" className="font-serif text-lg font-semibold tracking-tight text-foreground">
-          Alex Esterkin <span className="text-muted-foreground font-normal">|</span>{" "}
+
+        <a
+          href="#"
+          className="font-serif text-lg font-semibold tracking-tight text-foreground"
+        >
+          Alex Esterkin{" "}
+          <span className="text-muted-foreground font-normal">|</span>{" "}
           <span className="font-normal text-muted-foreground">Strategy</span>
         </a>
 
@@ -27,8 +32,13 @@ const Navigation = () => {
               className="flex items-center gap-1.5 text-sm font-medium text-foreground/80 hover:text-foreground transition-colors px-3 py-2"
             >
               Menu
-              <ChevronDown className={`w-4 h-4 transition-transform ${open ? "rotate-180" : ""}`} />
+              <ChevronDown
+                className={`w-4 h-4 transition-transform ${
+                  open ? "rotate-180" : ""
+                }`}
+              />
             </button>
+
             <AnimatePresence>
               {open && (
                 <motion.div
@@ -60,6 +70,7 @@ const Navigation = () => {
             Let's Talk
           </a>
         </div>
+
       </div>
     </nav>
   );
