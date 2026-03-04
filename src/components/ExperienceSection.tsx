@@ -19,7 +19,7 @@ const timeline = [
     bullets: [
       "Managed complex strategy engagements for FTSE-listed and PE-backed clients across consumer, industrial, and services sectors.",
       "Built growth strategies, value creation plans, and financial models that supported investment cases and M&A activity.",
-      "Led teams of 3–8 consultants; responsible for client delivery, team development, and commercial relationships.",
+      "Led teams of 4-8 consultants; responsible for client delivery, team development, and commercial relationships.",
     ],
   },
   {
