@@ -3,9 +3,10 @@ import profileImg from "@/assets/alex-profile.png";
 
 const HeroSection = () => {
   return (
-    <section className="min-h-[70vh] flex items-center pt-8 pb-4">
+    <section className="min-h-[70vh] flex items-center pt-28 md:pt-32 pb-10">
       <div className="container mx-auto px-6 max-w-[1100px]">
         <div className="grid md:grid-cols-[1fr_auto] gap-12 md:gap-16 items-center">
+
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -15,12 +16,15 @@ const HeroSection = () => {
               Strategy That Drives{" "}
               <span className="text-accent">Real Results.</span>
             </h1>
+
             <p className="mt-5 text-lg text-muted-foreground font-medium">
               Helping founders, CEOs and leadership teams make sharper decisions.
             </p>
+
             <p className="mt-4 text-base text-foreground/75 leading-relaxed max-w-xl">
               I work hands-on with leadership to figure out where to compete, how to win, how to fund growth, and how to turn strategy into numbers that matter. No fluff — just clear, actionable thinking.
             </p>
+
             <div className="mt-8 flex flex-wrap gap-4">
               <a
                 href="#contact"
@@ -28,6 +32,7 @@ const HeroSection = () => {
               >
                 Get in Touch
               </a>
+
               <a
                 href="https://www.linkedin.com/in/alex-esterkin-98168051"
                 target="_blank"
@@ -53,6 +58,7 @@ const HeroSection = () => {
               />
             </div>
           </motion.div>
+
         </div>
       </div>
     </section>
